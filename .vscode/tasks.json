@@ -1,0 +1,47 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++.exe build active file",
+            "command": "C:\\Users\\cdmillers2\\Downloads\\VSCode\\buildtools\\msys2\\ucrt64\\bin\\clang++.exe",
+            "args": [
+                "-std=c++20",
+                 "-Wall",
+                 "-Wextra",
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\..\\bin\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${fileDirname}\\..\\Include",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++"
+            ],
+            "options": {
+                "cwd": "C:\\Users\\cdmillers2\\Downloads\\VSCode\\buildtools\\msys2\\ucrt64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build with compiler."
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: build",
+            "command": "build",
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build with CMake."
+        }
+    ],
+    "version": "2.0.0"
+}
